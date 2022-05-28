@@ -8,6 +8,9 @@ const caesarCipher = (str,shift) =>{
   for (let i = 0 ; i < str.length ; i++){
     let code = str.charCodeAt(i);
     let shiftedCode = code + shift;
+    if (shiftedCode > zCode){
+      shiftedCode = (shiftedCode % (zCode+1)) + aCode;
+    }
     result += String.fromCharCode(shiftedCode);
   }
 

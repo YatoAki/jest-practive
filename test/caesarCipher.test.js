@@ -16,6 +16,6 @@ test("None Shfit", () => {
   expect(caesarCipher("Hello",0)).toBe("Hello");
 })
 
-test("Small Letter Conor Shfit", () => {
-  expect(caesarCipher("xyz",2)).toBe("zab");
+test("Small Letter all conor Shfit", () => {
+  expect(caesarCipher("xyz",5)).toBe("cde");
 })
