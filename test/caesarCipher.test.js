@@ -16,6 +16,14 @@ test("None Shfit", () => {
   expect(caesarCipher("Hello",0)).toBe("Hello");
 })
 
-test("Small Letter all conor Shfit", () => {
+test("Small Letter all corner Shfit", () => {
   expect(caesarCipher("xyz",5)).toBe("cde");
+})
+
+test("Cap Letter all corner Shfit", () => {
+  expect(caesarCipher("XYZ",5)).toBe("CDE");
+})
+
+test("Cap Small Conor & normal Shfit", () => {
+  expect(caesarCipher("xyYz",2)).toBe("zaAb");
 })
